@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            height: 80vh;
+            width: 60vh;
+            background-color: aqua;
+        }
+
+        h2 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 8px solid black;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+
+        }
+
+        input {
+            width: 85%;
+            margin: 12px;
+            padding: 30px;
+            font-size: large;
+        }
+
+        .table {
+            background-color: rgba(0, 0, 0, 0.5);
+            /* border-radius: 5px; */
+            box-shadow: 25px 25px 25px #000;
+            height: 80vh;
+        }
+
+        .btn {
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        button {
+            height: 5vh;
+            width: 10vw;
+            font-size: large;
+        }
+
+        button:hover {
+            background-color: green;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <img src="cat.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="main">
+            <div class="table">
+                <h2>Contact Us</h2>
+                <input placeholder="Your First Name" type="text">
+                <br>
+                <input placeholder="Your Last Name" type="text">
+                <br>
+                <input placeholder="Your City Name" type="text">
+                <br>
+                <input placeholder="Enter Email Address" type="text">
+                <br>
+                <input placeholder="Enter Your Phone number" type="text">
+                <br>
+                <input placeholder="Message" type="password">
+
+                <div class="btn">
+                    <button>Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

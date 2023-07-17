@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            background-color: burlywood;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            align-items: center;
+
+        }
+
+        .head {
+            text-align: center;
+            padding-top: 5%;
+            font-size: 30px;
+            border-bottom: 10px solid white;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-box {
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: auto auto;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #000;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 35vw;
+            height: 25vh;
+        }
+
+        .form-box input {
+            margin: 10px 0px;
+            border: none;
+            padding: 10px;
+            height: 4vh;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 20px;
+            font-family: poppins;
+        }
+
+        .form-box input[type=checkbox] {
+            display: none;
+        }
+
+        .form-box label {
+            position: relative;
+            margin-right: 10px;
+            top: 5px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .form-box label:before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            background-color: #ddd;
+        }
+
+        .form-box input[type=checkbox]:checked+label:before {
+            content: "\2713";
+            font-size: 20px;
+            color: #000;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        .form-box span {
+            font-size: 14px;
+        }
+
+        .btn {
+            padding-top: 4.5%;
+            text-align: center;
+        }
+
+        button {
+            background-color: deepskyblue;
+            color: black;
+            border: none;
+            border-radius: 20px;
+            width: 50%;
+            cursor: pointer;
+            font-size: x-large;
+            height: 40px;
+        }
+
+        button:hover {
+            background-color: khaki;
+        }
+
+        span a {
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <h1> Contact US</h1>
+        </div>
+        <div class="form">
+            <div class="card1">
+                <form action="">
+                    <div class="form-box">
+                        <input placeholder="Your Email Address" type="text">
+                        <input placeholder="Your Password" type="password">
+                        <input id="terms" type="checkbox">
+                        <label for="terms"></label>
+                        <span>Agree with <a href="#">Terms & Conditions</a></span>
+                        <div class="btn">
+                            <button>login</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
